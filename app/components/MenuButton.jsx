@@ -19,16 +19,16 @@ const MenuButton = () => {
         className="dropdown-content menu p-2 shadow-lg bg-base-300 rounded-box h-80 w-60  text-[1.1rem]"
       >
         <li>
-          <Link href="">Stream</Link>
+          <Link href="">About us</Link>
         </li>
         <li>
-          <Link href="">Shop</Link>
+          <Link href="/shop">Shop</Link>
         </li>
         <li>
-          <Link href="">Pricing</Link>
+          <Link href="">Servicee</Link>
         </li>
         <li>
-          <Link href="">Join</Link>
+          <Link href="">News</Link>
         </li>
         <li>
           <Link href="">Contract</Link>

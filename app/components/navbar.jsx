@@ -16,18 +16,18 @@ const Navbar = () => {
           alt="logo"
         />
       </Link>
-      <ul className="hidden xs:flex items-center  gap-x-[1rem] font-[400] text-base sm:text-lg sm:gap-x-[1.2rem] sm:gap-x-[1.8rem]">
+      <ul className="hidden xs:flex items-center  gap-x-[1rem] font-[400] text-base sm:text-lg  sm:gap-x-[1.8rem]">
         <li>
-          <Link href="">Stream</Link>
+          <Link href="">About us</Link>
         </li>
         <li>
-          <Link href="">Shop</Link>
+          <Link href="/shop">Shop</Link>
         </li>
         <li>
-          <Link href="">Pricing</Link>
+          <Link href="">Services</Link>
         </li>
         <li>
-          <Link href="">Join</Link>
+          <Link href="">News</Link>
         </li>
         <li>
           <Link href="">Contract</Link>

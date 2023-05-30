@@ -6,20 +6,20 @@ import image2 from "../public/home2.jpg";
 
 export default function Home() {
   return (
-    <div className="relative flex mt-[4rem] sm:mt-[5rem] flex-col sm:flex-row text-center sm:text-left justify-between">
+    <div className="relative   flex mt-[4rem] sm:mt-[5rem] flex-col gap-x-2 sm:flex-row text-center sm:text-left justify-between">
 
       {/* Left Side */}
       <div className=" flex flex-col gap-y-[1.25rem]  ">
         <h2 className="sm:text-[3.3rem] md:text-[3.5rem] xs:text-[3.2rem] lg:text-[3.8rem] text-[2.8rem]  sm:leading-[4rem] leading-[3rem] font-[500]">
-          The one tool you <br className="hidden xs:block" /> need to{" "}
-          <span className="bg-gradient-to-tr from-ascentColor  to-pink-500 text-transparent  bg-clip-text ">
-            make
-          </span>
-          <br /> any demo
+            Get the look you {""}
+            <br className="hidden xs:block" />
+            want faster and {""}
+            <br className="hidden xs:block"/>
+            easier with fashion
+          
         </h2>
         <p className="font-[500] text-[1rem] leading-[1.5rem] text-[#989898]">
-          Upload your song idea, license a voice and <br /> let our AI turn it
-          into a hit
+          Try our fashion dress to make yourself look different
         </p>
         <div className="flex items-center justify-center  gap-x-[2rem] mt-[0.8rem] sm:mt-[1.5rem] sm:justify-start">
           {/* button1 */}
@@ -31,7 +31,7 @@ export default function Home() {
             className="p-0.5 rounded-lg"
           >
             <button className="py-[0.85rem] px-[2rem] sm:px-[2.5rem]  rounded-lg font-[500] text-[0.8rem] sm:text-[1rem] leading-5 bg-bgColor">
-              Try for free
+              Shop now
             </button>
           </div>
           {/* button2 */}
@@ -42,13 +42,13 @@ export default function Home() {
             }}
             className="py-[0.85rem] px-[2rem] md:px-[2.5rem] md:py-[1rem]  rounded-lg font-[500] text-[0.8rem] sm:text-[1rem]  leading-5 md:leading-3"
           >
-            Create Music
+            About us
           </button>
         </div>
       </div>
 
       {/* Right SIDe */}
-      <div className="flex items-center justify-center mt-[2rem] lg:mt-0  gap-x-[0.8rem] lg:gap-x-[1rem] sm:gap-x-[0.5rem]">
+      <div className="flex items-center justify-center   gap-x-[0.8rem] lg:gap-x-[1rem] sm:gap-x-[0.5rem]">
         <Image
           src={image1}
           alt="home1"
@@ -61,7 +61,7 @@ export default function Home() {
           alt="home1"
           placeholder="blur"
           height="auto"
-          className="rounded-lg sm:h-[18rem] sm:w-[12rem]  md:h-[19rem] md:w-[14rem] lg:w-[17.5rem] lg:h-[22rem] xs:h-[16rem] xs:w-[12rem] h-[14rem] w-[8rem]"
+          className="rounded-lg sm:h-[18rem] sm:w-[12rem]  md:h-[19rem] md:w-[14rem] lg:w-[16rem] lg:h-[22rem] xs:h-[16rem] xs:w-[12rem] h-[14rem] w-[8rem]"
         />
       </div>
       <Image
@@ -72,7 +72,7 @@ export default function Home() {
       <Image
         src={svg1}
         alt="svg2"
-        className="h-[3rem] aspect-square absolute left-[18rem] bottom-[28rem] xs:bottom-[24rem] xs:left-[28rem] sm:left-[45rem] sm:bottom-[22rem] lg:left-[70rem] lg:bottom-[24rem]"
+        className="h-[3rem] aspect-square absolute left-[17rem] bottom-[28rem] xs:bottom-[24rem] xs:left-[28rem] sm:left-[45rem] sm:bottom-[22rem] lg:left-[70rem] lg:bottom-[24rem]"
       />
       
 
@@ -89,7 +89,7 @@ export default function Home() {
           background: "#B843B7",
           filter: "blur(200px)",
         }}
-        className="h-[12.5rem] aspect-square rounded-full absolute bottom-[50%] right-[50%]"
+        className="h-[12.5rem] aspect-square rounded-full absolute bottom-[50%] right-[35%] xs:right-[80%]"
       />
       <div
         style={{

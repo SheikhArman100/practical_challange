@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-const ButtonWrapper = ({ name }) => {
+const ButtonWrapper = () => {
   const router = useRouter();
   return (
     <div
@@ -12,8 +12,8 @@ const ButtonWrapper = ({ name }) => {
     >
       <button
         type="button"
-        className=" px-6 py-3  rounded-lg text-base leading-4 font-[500] bg-bgColor whitespace-nowrap md:text-[1.6rem]"
-        onClick={() => router.push("/signup")}
+        className=" px-6 py-3  rounded-lg text-base leading-4 font-[500] bg-bgColor whitespace-nowrap md:text-[1.2rem]"
+        onClick={() => router.push("/signin")}
       >
         Sign In
       </button>
