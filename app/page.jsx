@@ -48,7 +48,7 @@ export default function Home() {
       </div>
 
       {/* Right SIDe */}
-      <div className="flex items-center justify-center   gap-x-[0.8rem] lg:gap-x-[1rem] sm:gap-x-[0.5rem]">
+      <div className="flex items-center justify-center mt-2   gap-x-[0.8rem] lg:gap-x-[1rem] sm:gap-x-[0.5rem]">
         <Image
           src={image1}
           alt="home1"

@@ -28,9 +28,11 @@ const Shop = async () => {
             key={product._id}
             className="h-[14rem] w-[10rem] xs:h-[16rem] xs:w-[12rem] lg:w-[14rem] p-2 bg-gray-900 rounded-lg cursor-pointer flex flex-col justify-between shadow"
           >
-            <img
+            <Image
               src={product.img}
               alt=""
+              width="800"
+              height="800"
               className="w-full h-[60%] xs:h-[70%] rounded-lg object-cover"
             />
             <h3 className="text-sm text-gray-400  font-semibold lg:px-3">

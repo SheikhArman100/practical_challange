@@ -15,6 +15,14 @@ export const signup_validation = (values) => {
     errors.email = "Invalid email address";
   }
 
+  //phoneNumberValidation
+  if (!values.phoneNumber) {
+    errors.phoneNumber = "Required";
+  } else if (!/^01[0-9]{9}$/.test(values.phoneNumber)) {
+    errors.phoneNumber = "Invalid phone number";
+  }
+  
+
   //!password validation
   if (!values.password) {
     errors.password = "Password Required";

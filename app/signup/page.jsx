@@ -12,6 +12,7 @@ import {
   HiOutlineEye,
   HiOutlineMail,
   HiOutlineUserCircle,
+  HiOutlinePhone,
 } from "react-icons/hi";
 
 const Signup = () => {
@@ -24,6 +25,7 @@ const Signup = () => {
   const [focused, setFocused] = useState({
     username: false,
     email: false,
+    phoneNumber:false,
     password: false,
     confirmPassword: false,
   });
@@ -34,6 +36,7 @@ const Signup = () => {
     initialValues: {
       username: "",
       email: "",
+      phoneNumber:"",
       password: "",
       confirmPassword: "",
     },
@@ -169,6 +172,60 @@ const Signup = () => {
           {error === "Email Already Used...!" ? (
             <span className="text-rose-500 text-xs">
               Email Already Used...!
+            </span>
+          ) : (
+            ""
+          )}
+        </div>
+
+        {/* //!Phone Number */}
+        <div>
+          <label className="label">
+            <span className="label-text">Phone number</span>
+          </label>
+          <div
+            className={`input input-bordered w-full flex items-center gap-x-2 justify-between ${
+              formik.errors.phoneNumber && formik.touched.phoneNumber
+                ? "border-rose-600"
+                : focused.phoneNumber
+                ? "border-blue-600"
+                : ""
+            }`}
+          >
+            <input
+              type="tel"
+              placeholder="Enter your phone number"
+              className="bg-transparent w-full text-sm"
+              onFocus={() =>
+                setFocused({
+                  username: false,
+                  email: false,
+                  phoneNumber: true,
+                  password: false,
+                  confirmPassword: false,
+                })
+              }
+              {...formik.getFieldProps("phoneNumber")}
+            />
+            <HiOutlinePhone
+              size={28}
+              className={`${
+                formik.errors.phoneNumber && formik.touched.phoneNumber
+                  ? "text-rose-600"
+                  : focused.phoneNumber
+                  ? "text-blue-600"
+                  : "text-gray-400"
+              }`}
+            />
+          </div>
+          {formik.errors.phoneNumber && formik.touched.phoneNumber ? (
+            <span className="text-rose-500 text-xs">{formik.errors.phoneNumber}</span>
+          ) : (
+            ""
+          )}
+          {error === "Phone Number Already Used...!" ? (
+            <span className="text-rose-500 text-xs">
+              Phone Number Already Used...!
             </span>
           ) : (
             ""

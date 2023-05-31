@@ -20,6 +20,7 @@ module.exports = {
         bgColor: "#0F0E19",
         textColor: "#FFFFFF",
         ascentColor: "#32E5EB",
+        btnColor:"hsl(240 33% 14%)"
       },
     },
   },
